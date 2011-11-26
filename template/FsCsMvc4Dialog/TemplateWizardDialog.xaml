@@ -9,7 +9,7 @@
                 <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Canvas VerticalAlignment="Center" Margin="29,120,31,57" Height="134">
+        <Canvas VerticalAlignment="Center" Margin="29,142,31,35" Height="134">
             <CheckBox Name="cbIncludeTestsProject" IsChecked="True" Content="Include a Tests project" Canvas.Left="6" Canvas.Top="47" Width="180" />
             <Button Name="btnOk" Content="OK" Width="50px" Height="20" Canvas.Left="291" Canvas.Top="78" Click="btnOk_Click" />
             <Button Name="btnCancel" Canvas.Left="347" Canvas.Top="78" Content="Cancel" Height="20" Width="74" Click="btnCancel_Click" />
@@ -19,6 +19,25 @@
             </ComboBox>
             <Label Canvas.Left="0" Canvas.Top="6" Content="View Engine:" Height="28" Name="lblViewEngine" />
         </Canvas>
-        <Label HorizontalContentAlignment="Center" Content="Please select the desired options for this project." Height="58" HorizontalAlignment="Center" Margin="29,66,29,0" VerticalAlignment="Top" Width="447" />
+        <Label HorizontalContentAlignment="Center" Content="Please select the desired options for this project." Height="28" HorizontalAlignment="Center" Margin="29,0,27,0" VerticalAlignment="Top" Width="447" />
+        <ListView Height="75" HorizontalAlignment="Left" Margin="29,34,0,0" Name="lvwProjectType" VerticalAlignment="Top" Width="443" SelectionMode="Single" >
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListViewItem IsSelected="True" >
+                <ContentControl>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Image Source="/FsCsMvc4Dialog;component/images/FsCsASPNET.png" Grid.Row="0"></Image>
+                        <Label Content="Empty Project" Grid.Row="1"/>
+                    </Grid>
+                </ContentControl>
+            </ListViewItem>
+        </ListView>
     </Grid>
 </Window>
