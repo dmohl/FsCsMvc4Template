@@ -1,0 +1,9 @@
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Dan Mohl\F# C# MVC 4\1.0\\FsCsMvc4Dialog.dll
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Dan Mohl\F# C# MVC 4\1.0\\FsMvc4TemplateWizard.dll
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Dan Mohl\F# C# MVC 4\1.0\\extension.vsixmanifest
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Dan Mohl\F# C# MVC 4\1.0\\MicrosoftPublicLicense.txt
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Dan Mohl\F# C# MVC 4\1.0\ProjectTemplates\ASPNET\\FsMvc4.zip
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Dan Mohl\F# C# MVC 4\1.0\\NuGet.Core.dll
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Dan Mohl\F# C# MVC 4\1.0\\NuGet.VisualStudio.dll
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Dan Mohl\F# C# MVC 4\1.0\\FsCsMvc4Dialog.pdb
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Dan Mohl\F# C# MVC 4\1.0\\FsMvc4TemplateWizard.pdb

@@ -1,0 +1,52 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="1122" fromTop="0" />
+      <File id="d:Miscellaneous Files/f:WebAppTests.fsproj/l:C!?git?FsCsMvc4Template?tests?WebAppTests?WebAppTests.fsproj" caret="1942" fromTop="17" />
+      <File id="d:Miscellaneous Files/f:WebApp.fsproj/l:C!?git?FsCsMvc4Template?src?WebAppE?WebApp.fsproj" caret="1917" fromTop="16" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:ProjectService.fs" caret="0" fromTop="0" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="4225" fromTop="12" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1028" fromTop="10" />
+      <File id="d:Miscellaneous Files/f:ASPX.csproj/l:C!?git?FsCsMvc4Template?src?ASPX?ASPX.csproj" caret="6407" fromTop="12" />
+      <File id="d:Miscellaneous Files/f:Razor.csproj/l:C!?git?FsCsMvc4Template?src?Razor?Razor.csproj" caret="1749" fromTop="18" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="d:Miscellaneous Files/f:WebApp.fsproj/l:C!?git?FsCsMvc4Template?src?WebAppE?WebApp.fsproj" caret="1816" fromTop="6" />
+      <File id="d:Miscellaneous Files/f:WebAppTests.fsproj/l:C!?git?FsCsMvc4Template?tests?WebAppTests?WebAppTests.fsproj" caret="1841" fromTop="7" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="4926" fromTop="10" />
+      <File id="d:Miscellaneous Files/f:WebApp.fsproj/l:C!?git?FsCsMvc4Template?src?WebAppE?WebApp.fsproj" caret="680" fromTop="12" />
+      <File id="d:Miscellaneous Files/f:ASPX.csproj/l:C!?git?FsCsMvc4Template?src?ASPX?ASPX.csproj" caret="885" fromTop="14" />
+      <File id="d:Miscellaneous Files/f:Razor.csproj/l:C!?git?FsCsMvc4Template?src?Razor?Razor.csproj" caret="887" fromTop="14" />
+      <File id="d:Miscellaneous Files/f:WebAppTests.fsproj/l:C!?git?FsCsMvc4Template?tests?WebAppTests?WebAppTests.fsproj" caret="690" fromTop="12" />
+      <File id="d:Miscellaneous Files/f:WebAppTests.fsproj/l:C!?git?FsCsMvc4Template?tests?WebAppTests?WebAppTests.fsproj" caret="1841" fromTop="16" />
+      <File id="d:Miscellaneous Files/f:WebAppTests.fsproj/l:C!?git?FsCsMvc4Template?tests?WebAppTests?WebAppTests.fsproj" caret="1942" fromTop="17" />
+      <File id="d:Miscellaneous Files/f:WebApp.fsproj/l:C!?git?FsCsMvc4Template?src?WebAppE?WebApp.fsproj" caret="1816" fromTop="12" />
+      <File id="d:Miscellaneous Files/f:WebApp.fsproj/l:C!?git?FsCsMvc4Template?src?WebAppE?WebApp.fsproj" caret="1917" fromTop="16" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="305" fromTop="10" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="4638" fromTop="9" />
+      <File id="d:Miscellaneous Files/f:ASPX.csproj/l:C!?git?FsCsMvc4Template?src?ASPX?ASPX.csproj" caret="1751" fromTop="9" />
+      <File id="d:Miscellaneous Files/f:ASPX.csproj/l:C!?git?FsCsMvc4Template?src?ASPX?ASPX.csproj" caret="2246" fromTop="0" />
+      <File id="d:Miscellaneous Files/f:ASPX.csproj/l:C!?git?FsCsMvc4Template?src?ASPX?ASPX.csproj" caret="6407" fromTop="12" />
+      <File id="d:Miscellaneous Files/f:Razor.csproj/l:C!?git?FsCsMvc4Template?src?Razor?Razor.csproj" caret="6464" fromTop="1" />
+      <File id="d:Miscellaneous Files/f:Razor.csproj/l:C!?git?FsCsMvc4Template?src?Razor?Razor.csproj" caret="2244" fromTop="0" />
+      <File id="d:Miscellaneous Files/f:Razor.csproj/l:C!?git?FsCsMvc4Template?src?Razor?Razor.csproj" caret="1749" fromTop="3" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

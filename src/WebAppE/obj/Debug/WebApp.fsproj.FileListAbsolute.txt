@@ -1,0 +1,8 @@
+C:\git\FsCsMvc4Template\src\WebAppE\bin\Debug\WebApp.XML
+C:\git\FsCsMvc4Template\src\WebAppE\bin\Debug\WebApp.dll
+C:\git\FsCsMvc4Template\src\WebAppE\bin\Debug\WebApp.pdb
+C:\git\FsCsMvc4Template\src\WebAppE\bin\Debug\FSharp.Core.dll
+C:\git\FsCsMvc4Template\src\WebAppE\bin\Debug\FSharp.Core.xml
+C:\git\FsCsMvc4Template\src\WebAppE\obj\Debug\ResolveAssemblyReference.cache
+C:\git\FsCsMvc4Template\src\WebAppE\obj\Debug\WebApp.dll
+C:\git\FsCsMvc4Template\src\WebAppE\obj\Debug\WebApp.pdb

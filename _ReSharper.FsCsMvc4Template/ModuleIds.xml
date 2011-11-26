@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="9EC3CEC7-7B86-405B-BC41-0306588B693C" ModuleId="FsCsMvc3Dialog" />
+  <Module PersistentId="457C0D12-0DA3-4244-B957-C67D009C4D21" ModuleId="ASPX" />
+  <Module PersistentId="E2DED83E-5F33-44EE-B600-96BB568181F6" ModuleId="Razor" />
+</Modules>

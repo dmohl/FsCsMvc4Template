@@ -1,0 +1,12 @@
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\bin\Debug\FsCsMvc4Dialog.dll
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\bin\Debug\FsCsMvc4Dialog.pdb
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\ResolveAssemblyReference.cache
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\TemplateWizardDialog.baml
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\TemplateWizardDialog.g.cs
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog_MarkupCompile.cache
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.g.resources
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.Properties.Resources.resources
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\GenerateResource.read.1.tlog
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\GenerateResource.write.1.tlog
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.dll
+C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.pdb

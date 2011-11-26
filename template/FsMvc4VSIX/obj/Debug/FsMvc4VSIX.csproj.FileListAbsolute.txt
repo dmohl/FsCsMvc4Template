@@ -1,0 +1,15 @@
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\ResolveAssemblyReference.cache
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\MicrosoftPublicLicense.txt
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\ProjectTemplates\ASPNET\FsMvc4.zip
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4TemplateWizard.dll
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\NuGet.VisualStudio.dll
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsCsMvc4Dialog.dll
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\NuGet.Core.dll
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4TemplateWizard.pdb
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4TemplateWizard.xml
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsCsMvc4Dialog.pdb
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\extension.vsixmanifest
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\extension.vsixmanifest
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4.vsix
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\FsMvc4.dll
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\FsMvc4.pdb
