@@ -16,3 +16,12 @@ C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\
 C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.1\\NuGet.VisualStudio.dll
 C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.1\\FsCsMvc4Dialog.pdb
 C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.1\\FsMvc4TemplateWizard.pdb
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.2\\FsCsMvc4Dialog.dll
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.2\\FsMvc4TemplateWizard.dll
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.2\\extension.vsixmanifest
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.2\\MicrosoftPublicLicense.txt
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.2\ProjectTemplates\ASPNET\\FsMvc4.zip
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.2\\NuGet.Core.dll
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.2\\NuGet.VisualStudio.dll
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.2\\FsCsMvc4Dialog.pdb
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\DM\F# C# MVC 4\1.2\\FsMvc4TemplateWizard.pdb
