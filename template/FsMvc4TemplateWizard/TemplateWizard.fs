@@ -9,6 +9,7 @@ open EnvDTE80
 open Microsoft.VisualStudio.Shell
 open Microsoft.VisualStudio.TemplateWizard
 open VSLangProj
+open NuGet.VisualStudio
 open FsCsMvc4Dialog
 
 type TemplateWizard() =
@@ -19,14 +20,16 @@ type TemplateWizard() =
     [<DefaultValue>] val mutable destinationPath : string
     [<DefaultValue>] val mutable safeProjectName : string
     [<DefaultValue>] val mutable includeTestProject : bool
+    [<DefaultValue>] val mutable vsixInstallPath : string
     let mutable selectedWebProjectName = "Razor"
     interface IWizard with
         member this.RunStarted (automationObject:Object, 
                                 replacementsDictionary:Dictionary<string,string>, 
                                 runKind:WizardRunKind, customParams:Object[]) =
+            this.vsixInstallPath <- customParams |> Seq.cast |> Seq.find(fun x -> x.Contains ".vstemplate")
             this.dte <- automationObject :?> DTE
             this.dte2 <- automationObject :?> DTE2
-            this.solution <- this.dte2.Solution :?> Solution2
+            this.solution <- this.dte2.Solution :?> EnvDTE80.Solution2
             this.serviceProvider <- new ServiceProvider(automationObject :?> 
                                      Microsoft.VisualStudio.OLE.Interop.IServiceProvider)
             this.destinationPath <- replacementsDictionary.["$destinationdirectory$"]
@@ -50,12 +53,13 @@ type TemplateWizard() =
                 let webName = this.safeProjectName + "Web"
                 let webAppName = this.safeProjectName + "WebApp"
                 let webAppTestsName = this.safeProjectName + "WebAppTests"
-                let templatePath = this.solution.GetProjectTemplate("FsMvc4.zip", "FSharp")
+
+                let templatePath = this.vsixInstallPath 
                 try
                     let AddProject status projectVsTemplateName projectName =
                         this.dte2.StatusBar.Text <- status
                         let path = templatePath.Replace("FsMvc4.vstemplate", projectVsTemplateName)
-                        this.solution.AddFromTemplate(path, Path.Combine(this.destinationPath, projectName), 
+                        this.dte2.Solution.AddFromTemplate(path, Path.Combine(this.destinationPath, projectName), 
                             projectName, false) |> ignore
                     AddProject "Installing the C# Web project..." 
                         (Path.Combine(selectedWebProjectName, selectedWebProjectName+ ".vstemplate")) webName
@@ -68,11 +72,48 @@ type TemplateWizard() =
                     let projects = BuildProjectMap (this.dte.Solution.Projects)
 
                     this.dte2.StatusBar.Text <- "Adding NuGet packages..."
-                    (projects.TryFind webName).Value |> InstallPackages this.serviceProvider 
-                    <| [("AspNetMvc", "4.0.10906.0"); ("AspNetWebPagesCore", "2.0.10906.0"); ("jQuery", "1.6.2"); ("jQuery.Mobile", "0.5.2")
-                        ("jQuery.Ajax.Unobtrusive", "1.0"); ("jQuery.Validation", "1.8"); ("jQuery.Validation.Unobtrusive", "1.0") 
-                        ("knockoutjs", "1.2.9.0"); ("jQuery.UI.Combined", "1.8.11"); ("Modernizr", "2.0.6"); ("EntityFramework", "4.1.10331.0")
-                        ("Microsoft.Web.Optimization", "0.1"); ("MicrosoftWebInfrastructure", "1.0.0.0"); ("System.Web.Providers", "1.0.1")]
+                    try
+
+// This is the List from the C# ASP.NET MVC Empty template found at C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ProjectTemplatesCache\CSharp\Web\1033\EmptyMvcWebApplicationProjectTemplatev4.0.cshtml.zip
+//            <package id="jQuery" version="1.6.2" />
+//            <package id="jQuery.Validation" version="1.8.1" />
+//            <package id="jQuery.UI.Combined" version="1.8.11" />
+//            <package id="jQuery.Validation.Unobtrusive" version="2.0.20126.16343" />
+//            <package id="jQuery.Ajax.Unobtrusive" version="2.0.20126.16343" />
+//            <package id="EntityFramework" version="4.1.10331.0" />
+//            <package id="Modernizr" version="2.0.6" />
+//            <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
+//            <package id="AspNetRazor.Core" version="2.0.20126.16343" />
+//            <package id="AspNetWebPages.Core" version="2.0.20126.16343" />
+//            <package id="System.Web.Http.Common" version="4.0.20126.16343" />
+//            <package id="AspNetMvc" version="4.0.20126.16343" />
+//            <package id="System.Json" version="4.0.20126.16343" />
+//            <package id="System.Net.Http" version="2.0.20126.16343" />
+//            <package id="System.Net.Http.Formatting" version="4.0.20126.16343" />
+//            <package id="AspNetWebApi.Core" version="4.0.20126.16343" />
+//            <package id="AspNetWebApi" version="4.0.20126.16343" />
+//            <package id="System.Web.Providers.Core" version="1.0" />
+//            <package id="System.Web.Providers" version="1.1" />
+//            <package id="Microsoft.Web.Optimization" version="1.0.0-beta" />
+//            <package id="knockoutjs" version="2.0.0.0" />
+
+                        (projects.TryFind webName).Value |> InstallPackages this.serviceProvider 
+                        <| [("AspNetMvc", "4.0.20126.16343"); ("AspNetWebPages.Core", "2.0.20126.16343"); ("jQuery", "1.6.2"); ("jQuery.Mobile", "1.0")
+                            ("jQuery.Ajax.Unobtrusive", "2.0.20126.16343"); ("jQuery.Validation", "1.8.1"); ("jQuery.Validation.Unobtrusive", "2.0.20126.16343") 
+                            ("knockoutjs", "2.0.0.0"); ("jQuery.UI.Combined", "1.8.11"); ("Modernizr", "2.0.6"); ("EntityFramework", "4.1.10331.0")
+                            ("Microsoft.Web.Optimization", "1.0.0-beta"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("System.Web.Providers.Core", "1.0")
+                            ("AspNetRazor.Core", "2.0.20126.16343"); ("System.Web.Http.Common", "4.0.20126.16343"); ("System.Json", "4.0.20126.16343")
+                            ("System.Net.Http", "2.0.20126.16343"); ("System.Net.Http.Formatting", "4.0.20126.16343");  ("System.Web.Providers", "1.1")
+                            ("AspNetWebApi.Core", "4.0.20126.16343"); ("AspNetWebApi", "4.0.20126.16343");]
+
+                        // Need separate NuGet package installs for MVC and WebApi? This might improve perf. 
+                    with
+                    | ex -> failwith (sprintf "%s\n\r%s\n\r%s\n\r%s\n\r%s" 
+                                "The NuGet installation process failed."
+                                "Ensure that you have installed at least the beta version of ASP.NET MVC 4." 
+                                "See http://asp.net/mvc/mvc4 for more information."
+                                "The actual exception message is: "
+                                ex.Message)
 
                     this.dte2.StatusBar.Text <- "Updating project references..."
                     [(webName, webAppName); (webAppTestsName, webAppName)]

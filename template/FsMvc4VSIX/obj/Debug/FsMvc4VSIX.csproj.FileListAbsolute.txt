@@ -4,7 +4,6 @@ C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\ProjectTemplates\ASPNET\Fs
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4TemplateWizard.dll
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\NuGet.VisualStudio.dll
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsCsMvc4Dialog.dll
-C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\NuGet.Core.dll
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4TemplateWizard.pdb
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4TemplateWizard.xml
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsCsMvc4Dialog.pdb
