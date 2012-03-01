@@ -97,7 +97,7 @@ type TemplateWizard() =
 //            <package id="Microsoft.Web.Optimization" version="1.0.0-beta" />
 //            <package id="knockoutjs" version="2.0.0.0" />
 
-                        (projects.TryFind webName).Value |> InstallPackages this.serviceProvider 
+                        (projects.TryFind webName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
                         <| [("AspNetMvc", "4.0.20126.16343"); ("AspNetWebPages.Core", "2.0.20126.16343"); ("jQuery", "1.6.2"); ("jQuery.Mobile", "1.0")
                             ("jQuery.Ajax.Unobtrusive", "2.0.20126.16343"); ("jQuery.Validation", "1.8.1"); ("jQuery.Validation.Unobtrusive", "2.0.20126.16343") 
                             ("knockoutjs", "2.0.0.0"); ("jQuery.UI.Combined", "1.8.11"); ("Modernizr", "2.0.6"); ("EntityFramework", "4.1.10331.0")
@@ -112,6 +112,7 @@ type TemplateWizard() =
                                 "The NuGet installation process failed."
                                 "Ensure that you have installed at least the beta version of ASP.NET MVC 4." 
                                 "See http://asp.net/mvc/mvc4 for more information."
+                                //("See http://asp.net/mvc/mvc4 for more information." + " debug: NuGet Path = " + NuGetService.GetNuGetPackageLocalPath(this.serviceProvider))
                                 "The actual exception message is: "
                                 ex.Message)
 
