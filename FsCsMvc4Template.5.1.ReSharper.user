@@ -8,21 +8,23 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:ProjectService.fs" caret="0" fromTop="0" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1028" fromTop="10" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2560" fromTop="1" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="4225" fromTop="12" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:ProjectService.fs" caret="0" fromTop="0" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="890" fromTop="5" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3671" fromTop="4" />
     </RecentFiles>
     <RecentEdits>
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="4926" fromTop="10" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="5165" fromTop="10" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="305" fromTop="10" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="4638" fromTop="9" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2753" fromTop="4" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2753" fromTop="3" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="1959" fromTop="4" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2074" fromTop="3" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2753" fromTop="0" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2560" fromTop="1" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="4878" fromTop="15" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1234" fromTop="10" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3991" fromTop="8" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

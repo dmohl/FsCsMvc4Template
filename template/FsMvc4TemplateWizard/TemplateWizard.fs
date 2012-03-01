@@ -69,9 +69,10 @@ type TemplateWizard() =
 
                     this.dte2.StatusBar.Text <- "Adding NuGet packages..."
                     (projects.TryFind webName).Value |> InstallPackages this.serviceProvider 
-                    <| ["AspNetMvc"; "AspNetWebPagesCore"; "jQuery"; "jQuery.Ajax.Unobtrusive"; "jQuery.Validation" 
-                        "jQuery.Validation.Unobtrusive"; "knockoutjs"; "jQuery.UI.Combined"; "Modernizr"; "EntityFramework"
-                        "Microsoft.Web.Optimization"; "MicrosoftWebInfrastructure"; "System.Web.Providers"]
+                    <| [("AspNetMvc", "4.0.10906.0"); ("AspNetWebPagesCore", "2.0.10906.0"); ("jQuery", "1.6.2"); ("jQuery.Mobile", "0.5.2")
+                        ("jQuery.Ajax.Unobtrusive", "1.0"); ("jQuery.Validation", "1.8"); ("jQuery.Validation.Unobtrusive", "1.0") 
+                        ("knockoutjs", "1.2.9.0"); ("jQuery.UI.Combined", "1.8.11"); ("Modernizr", "2.0.6"); ("EntityFramework", "4.1.10331.0")
+                        ("Microsoft.Web.Optimization", "0.1"); ("MicrosoftWebInfrastructure", "1.0.0.0"); ("System.Web.Providers", "1.0.1")]
 
                     this.dte2.StatusBar.Text <- "Updating project references..."
                     [(webName, webAppName); (webAppTestsName, webAppName)]
@@ -79,7 +80,7 @@ type TemplateWizard() =
                 with
                 | ex -> failwith (sprintf "%s\n\r%s\n\r%s\n\r%s\n\r%s" 
                             "The project creation has failed."
-                            "Ensure that you have installed ASP.NET MVC 4." 
+                            "Ensure that you have installed at least the beta version of ASP.NET MVC 4." 
                             "See http://asp.net/mvc/mvc4 for more information."
                             "The actual exception message is: "
                             ex.Message)
