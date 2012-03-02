@@ -21,6 +21,8 @@ type TemplateWizard() =
     [<DefaultValue>] val mutable safeProjectName : string
     [<DefaultValue>] val mutable includeTestProject : bool
     [<DefaultValue>] val mutable vsixInstallPath : string
+    [<DefaultValue>] val mutable isWebApi : bool
+
     let mutable selectedWebProjectName = "Razor"
     interface IWizard with
         member this.RunStarted (automationObject:Object, 
@@ -40,6 +42,7 @@ type TemplateWizard() =
             | true -> 
                 this.includeTestProject <- dialog.IncludeTestsProject
                 selectedWebProjectName <- dialog.SelectedViewEngine
+                this.isWebApi <- dialog.IsWebApi
             | _ ->
                 raise (new WizardCancelledException())
         member this.ProjectFinishedGenerating project = "Not Implemented" |> ignore
@@ -50,8 +53,15 @@ type TemplateWizard() =
             let currentCursor = Cursor.Current
             Cursor.Current <- Cursors.WaitCursor
             try
-                let webName = this.safeProjectName + "Web"
-                let webAppName = this.safeProjectName + "WebApp"
+                let mutable selectedWebAppProjectName = "WebApp"
+                let webName = match this.isWebApi with
+                              | true -> selectedWebProjectName <- "WebApi"
+                                        this.safeProjectName + "WebApi"
+                              | _ -> this.safeProjectName + "Web"
+                let webAppName = match this.isWebApi with
+                                 | true -> selectedWebAppProjectName <- "WebAppApi"
+                                           this.safeProjectName + "WebAppApi"
+                                 | _ -> this.safeProjectName + "WebApp"
                 let webAppTestsName = this.safeProjectName + "WebAppTests"
 
                 let templatePath = this.vsixInstallPath 
@@ -62,9 +72,9 @@ type TemplateWizard() =
                         this.dte2.Solution.AddFromTemplate(path, Path.Combine(this.destinationPath, projectName), 
                             projectName, false) |> ignore
                     AddProject "Installing the C# Web project..." 
-                        (Path.Combine(selectedWebProjectName, selectedWebProjectName+ ".vstemplate")) webName
+                        (Path.Combine(selectedWebProjectName, selectedWebProjectName + ".vstemplate")) webName
                     AddProject "Adding the F# Web App project..." 
-                        (Path.Combine("WebApp", "WebApp.vstemplate")) webAppName
+                        (Path.Combine(selectedWebAppProjectName, selectedWebAppProjectName + ".vstemplate")) webAppName
                     if this.includeTestProject then
                         AddProject "Adding the F# Web App Tests project..." 
                             (Path.Combine("WebAppTests", "WebAppTests.vstemplate")) webAppTestsName

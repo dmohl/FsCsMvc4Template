@@ -8,42 +8,43 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2560" fromTop="1" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:ProjectService.fs" caret="0" fromTop="0" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1202" fromTop="16" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7026" fromTop="13" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="884" fromTop="15" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="354" fromTop="3" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="4605" fromTop="11" />
     </RecentFiles>
     <RecentEdits>
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="8418" fromTop="10" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2753" fromTop="4" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2753" fromTop="3" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="1959" fromTop="4" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2074" fromTop="3" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2753" fromTop="0" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2560" fromTop="1" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="8131" fromTop="15" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1303" fromTop="10" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7175" fromTop="13" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1253" fromTop="18" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1253" fromTop="19" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1253" fromTop="8" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1253" fromTop="4" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="646" fromTop="7" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="646" fromTop="4" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="6974" fromTop="15" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="4179" fromTop="7" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="270" fromTop="11" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="1322" fromTop="5" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="1695" fromTop="10" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3066" fromTop="10" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="750" fromTop="7" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="1155" fromTop="13" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="2770" fromTop="13" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7000" fromTop="9" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="1374" fromTop="5" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="1747" fromTop="10" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3676" fromTop="10" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="1207" fromTop="13" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3380" fromTop="13" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7650" fromTop="9" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="666" fromTop="13" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7322" fromTop="10" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7972" fromTop="10" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1202" fromTop="16" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="5851" fromTop="3" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="6501" fromTop="3" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2725" fromTop="3" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2495" fromTop="2" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="3402" fromTop="4" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="3237" fromTop="1" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2843" fromTop="2" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2024" fromTop="2" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2260" fromTop="3" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="401" fromTop="16" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="1297" fromTop="5" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="401" fromTop="8" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="855" fromTop="14" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="711" fromTop="9" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="354" fromTop="3" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="821" fromTop="9" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="2064" fromTop="17" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3246" fromTop="4" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="2675" fromTop="4" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="2810" fromTop="7" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3971" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -56,4 +57,21 @@
     <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ComboBox">
+      <Item value="IsEnabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="e" priority="0" />
+      <Item value="lvwProjectType" priority="0" />
+      <Item value="if" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="SelectedViewEngine" priority="0" />
+      <Item value="private" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ListView">
+      <Item value="SelectedValue" priority="0" />
+      <Item value="SelectedIndex" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>
