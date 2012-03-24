@@ -12,4 +12,3 @@ C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\extension.vsixmanifest
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4.vsix
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\FsMvc4.dll
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\FsMvc4.pdb
-C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\NuGet.Core.dll
