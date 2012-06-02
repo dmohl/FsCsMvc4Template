@@ -3,7 +3,6 @@ C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FsMvc4TemplateWi
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FsMvc4TemplateWizard.dll
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FsMvc4TemplateWizard.pdb
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FsCsMvc4Dialog.dll
-C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\NuGet.VisualStudio.dll
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FsCsMvc4Dialog.pdb
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\obj\Debug\FsMvc4TemplateWizard.dll
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\obj\Debug\FsMvc4TemplateWizard.pdb
@@ -25,3 +24,4 @@ C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\Microsoft.Visual
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.xml
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FSharp.Core.xml
+C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\NuGet.VisualStudio.dll

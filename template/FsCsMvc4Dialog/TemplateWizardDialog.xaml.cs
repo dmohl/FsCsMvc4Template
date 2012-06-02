@@ -19,7 +19,8 @@ namespace FsCsMvc4Dialog
                 cbIncludeTestsProject.IsChecked.HasValue ? cbIncludeTestsProject.IsChecked.Value : false;
             if (IsWebApi)
             {
-                SelectedViewEngine = "Razor";                
+                SelectedViewEngine = "Razor";
+                cbViewEngine.SelectedIndex = 1;
             }
             else
             {

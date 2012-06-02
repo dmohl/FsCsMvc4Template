@@ -19,7 +19,8 @@ module NuGetService
     let InstallPackages (serviceProvider:IServiceProvider) nuGetPackagePath (project:Project) packages =
         let componentModel = 
             serviceProvider.GetService(typeof<SComponentModel>) :?> IComponentModel
-        let installer = componentModel.GetService<IVsPackageInstaller>()
+        let installer = componentModel.GetService<IVsPackageInstaller>() :?> VsPackageInstaller
+
         //let nugetPackageLocalPath = GetNuGetPackageLocalPath serviceProvider
         packages 
         |> Seq.iter (fun (packageId, version:string) -> 

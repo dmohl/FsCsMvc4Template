@@ -85,42 +85,43 @@ type TemplateWizard() =
                     try
 
 // This is the List from the C# ASP.NET MVC Empty template found at C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ProjectTemplatesCache\CSharp\Web\1033\EmptyMvcWebApplicationProjectTemplatev4.0.cshtml.zip
-//            <package id="jQuery" version="1.6.2" />
-//            <package id="jQuery.Validation" version="1.8.1" />
-//            <package id="jQuery.UI.Combined" version="1.8.11" />
-//            <package id="jQuery.Validation.Unobtrusive" version="2.0.20126.16343" />
-//            <package id="jQuery.Ajax.Unobtrusive" version="2.0.20126.16343" />
-//            <package id="EntityFramework" version="4.1.10331.0" />
-//            <package id="Modernizr" version="2.0.6" />
-//            <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
-//            <package id="AspNetRazor.Core" version="2.0.20126.16343" />
-//            <package id="AspNetWebPages.Core" version="2.0.20126.16343" />
-//            <package id="System.Web.Http.Common" version="4.0.20126.16343" />
-//            <package id="AspNetMvc" version="4.0.20126.16343" />
-//            <package id="System.Json" version="4.0.20126.16343" />
-//            <package id="System.Net.Http" version="2.0.20126.16343" />
-//            <package id="System.Net.Http.Formatting" version="4.0.20126.16343" />
-//            <package id="AspNetWebApi.Core" version="4.0.20126.16343" />
-//            <package id="AspNetWebApi" version="4.0.20126.16343" />
-//            <package id="System.Web.Providers.Core" version="1.0" />
-//            <package id="System.Web.Providers" version="1.1" />
-//            <package id="Microsoft.Web.Optimization" version="1.0.0-beta" />
-//            <package id="knockoutjs" version="2.0.0.0" />
+//  <package id="EntityFramework" version="5.0.0-rc" />
+//  <package id="jQuery" version="1.6.2" />
+//  <package id="jQuery.UI.Combined" version="1.8.11" />
+//  <package id="jQuery.Validation" version="1.8.1" />
+//  <package id="knockoutjs" version="2.0.0" />
+//  <package id="Microsoft.AspNet.Mvc" version="4.0.20505.0" />
+//  <package id="Microsoft.AspNet.Providers" version="1.1" />
+//  <package id="Microsoft.AspNet.Providers.Core" version="1.0" />
+//  <package id="Microsoft.AspNet.Razor" version="2.0.20505.0" />
+//  <package id="Microsoft.AspNet.Web.Optimization" version="1.0.0-beta2" />
+//  <package id="Microsoft.AspNet.WebApi" version="4.0.20505.0" />
+//  <package id="Microsoft.AspNet.WebApi.Client" version="4.0.20505.0" />
+//  <package id="Microsoft.AspNet.WebApi.Core" version="4.0.20505.0" />
+//  <package id="Microsoft.AspNet.WebApi.WebHost" version="4.0.20505.0" />
+//  <package id="Microsoft.AspNet.WebPages" version="2.0.20505.0" />
+//  <package id="Microsoft.jQuery.Unobtrusive.Ajax" version="2.0.20505.0" />
+//  <package id="Microsoft.jQuery.Unobtrusive.Validation" version="2.0.20505.0" />
+//  <package id="Microsoft.Net.Http" version="2.0.20505.0" />
+//  <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
+//  <package id="Modernizr" version="2.0.6" />
+//  <package id="Newtonsoft.Json" version="4.5.1" />
+//  <package id="WebGrease" version="1.0.0" />
 
                         (projects.TryFind webName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
-                        <| [("AspNetMvc", "4.0.20126.16343"); ("AspNetWebPages.Core", "2.0.20126.16343"); ("jQuery", "1.6.2"); ("jQuery.Mobile", "1.0")
-                            ("jQuery.Ajax.Unobtrusive", "2.0.20126.16343"); ("jQuery.Validation", "1.8.1"); ("jQuery.Validation.Unobtrusive", "2.0.20126.16343") 
-                            ("knockoutjs", "2.0.0.0"); ("jQuery.UI.Combined", "1.8.11"); ("Modernizr", "2.0.6"); ("EntityFramework", "4.1.10331.0")
-                            ("Microsoft.Web.Optimization", "1.0.0-beta"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("System.Web.Providers.Core", "1.0")
-                            ("AspNetRazor.Core", "2.0.20126.16343"); ("System.Web.Http.Common", "4.0.20126.16343"); ("System.Json", "4.0.20126.16343")
-                            ("System.Net.Http", "2.0.20126.16343"); ("System.Net.Http.Formatting", "4.0.20126.16343");  ("System.Web.Providers", "1.1")
-                            ("AspNetWebApi.Core", "4.0.20126.16343"); ("AspNetWebApi", "4.0.20126.16343");]
+                        <| [("EntityFramework", "5.0.0-rc"); ("jQuery.UI.Combined", "1.8.11"); ("jQuery", "1.6.4"); ("jQuery.Validation", "1.8.1")
+                            ("knockoutjs", "2.0.0"); ("Microsoft.AspNet.Mvc", "4.0.20505.0"); ("Microsoft.AspNet.Providers", "1.1") 
+                            ("Microsoft.AspNet.Providers.Core", "1.0"); ("Microsoft.AspNet.Razor", "2.0.20505.0"); ("Microsoft.AspNet.Web.Optimization", "1.0.0-beta2") 
+                            ("Microsoft.AspNet.WebApi", "4.0.20505.0"); ("Microsoft.AspNet.WebApi.Client", "4.0.20505.0"); ("Microsoft.AspNet.WebApi.WebHost", "4.0.20505.0")
+                            ("Microsoft.AspNet.WebPages", "2.0.20505.0"); ("Microsoft.jQuery.Unobtrusive.Ajax", "2.0.20505.0"); ("Microsoft.jQuery.Unobtrusive.Validation", "2.0.20505.0")
+                            ("Microsoft.Net.Http", "2.0.20505.0"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("Modernizr", "2.0.6")
+                            ("Newtonsoft.Json", "4.5.1"); ("WebGrease", "1.0.0") ]
 
                         // Need separate NuGet package installs for MVC and WebApi? This might improve perf. 
                     with
                     | ex -> failwith (sprintf "%s\n\r%s\n\r%s\n\r%s\n\r%s" 
                                 "The NuGet installation process failed."
-                                "Ensure that you have installed at least the beta version of ASP.NET MVC 4." 
+                                "Ensure that you have installed at least the release candidate of ASP.NET MVC 4." 
                                 "See http://asp.net/mvc/mvc4 for more information."
                                 //("See http://asp.net/mvc/mvc4 for more information." + " debug: NuGet Path = " + NuGetService.GetNuGetPackageLocalPath(this.serviceProvider))
                                 "The actual exception message is: "
@@ -132,7 +133,7 @@ type TemplateWizard() =
                 with
                 | ex -> failwith (sprintf "%s\n\r%s\n\r%s\n\r%s\n\r%s" 
                             "The project creation has failed."
-                            "Ensure that you have installed at least the beta version of ASP.NET MVC 4." 
+                            "Ensure that you have installed at least the release candidate of ASP.NET MVC 4." 
                             "See http://asp.net/mvc/mvc4 for more information."
                             "The actual exception message is: "
                             ex.Message)
