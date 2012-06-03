@@ -1,4 +1,3 @@
-C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\obj\Debug\ResolveAssemblyReference.cache
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FsMvc4TemplateWizard.XML
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FsMvc4TemplateWizard.dll
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FsMvc4TemplateWizard.pdb
@@ -25,3 +24,6 @@ C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\Microsoft.Visual
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\FSharp.Core.xml
 C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\NuGet.VisualStudio.dll
+C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\Microsoft.VisualStudio.Settings.dll
+C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\bin\Debug\Microsoft.VisualStudio.Settings.xml
+C:\git\FsCsMvc4Template\template\FsMvc4TemplateWizard\obj\Debug\FsMvc4TemplateWizard.fsprojResolveAssemblyReference.cache

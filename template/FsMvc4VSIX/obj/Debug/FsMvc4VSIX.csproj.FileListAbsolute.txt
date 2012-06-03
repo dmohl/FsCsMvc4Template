@@ -1,4 +1,3 @@
-C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\ResolveAssemblyReference.cache
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\MicrosoftPublicLicense.txt
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\ProjectTemplates\ASPNET\FsMvc4.zip
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4TemplateWizard.dll
@@ -13,3 +12,6 @@ C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\FsMvc4.vsix
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\FsMvc4.dll
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\FsMvc4.pdb
 C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\NuGet.Core.dll
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\Microsoft.VisualStudio.Settings.dll
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\bin\Debug\Microsoft.VisualStudio.Settings.xml
+C:\git\FsCsMvc4Template\template\FsMvc4VSIX\obj\Debug\FsMvc4VSIX.csprojResolveAssemblyReference.cache
