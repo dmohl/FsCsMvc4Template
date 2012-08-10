@@ -43,11 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="EnvDTE">
-      <HintPath>..\..\lib\EnvDTE.dll</HintPath>
+      <HintPath>..\lib\EnvDTE.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EnvDTE80">
-      <HintPath>..\..\lib\EnvDTE80.dll</HintPath>
+      <HintPath>..\lib\EnvDTE80.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.ComponentModelHost">
@@ -78,14 +78,11 @@
     <Reference Include="FSharp.Core">
       <Private>True</Private>
     </Reference>
-    <Reference Include="NuGet.Core, Version=1.8.30423.9026, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+    <Reference Include="NuGet.Core">
       <HintPath>..\..\lib\NuGet.Core.dll</HintPath>
-      <SpecificVersion>True</SpecificVersion>
-      <Private>True</Private>
     </Reference>
-    <Reference Include="NuGet.VisualStudio, Version=1.8.30423.9026, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <Reference Include="NuGet.VisualStudio">
       <HintPath>..\..\lib\NuGet.VisualStudio.dll</HintPath>
-      <SpecificVersion>True</SpecificVersion>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

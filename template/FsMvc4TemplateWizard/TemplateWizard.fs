@@ -109,13 +109,13 @@ type TemplateWizard() =
 //  <package id="WebGrease" version="1.0.0" />
 
                         (projects.TryFind webName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
-                        <| [("EntityFramework", "5.0.0-rc"); ("jQuery.UI.Combined", "1.8.11"); ("jQuery", "1.6.4"); ("jQuery.Validation", "1.8.1")
-                            ("knockoutjs", "2.0.0"); ("Microsoft.AspNet.Mvc", "4.0.20505.0"); ("Microsoft.AspNet.Providers", "1.1") 
-                            ("Microsoft.AspNet.Providers.Core", "1.0"); ("Microsoft.AspNet.Razor", "2.0.20505.0"); ("Microsoft.AspNet.Web.Optimization", "1.0.0-beta2") 
-                            ("Microsoft.AspNet.WebApi", "4.0.20505.0"); ("Microsoft.AspNet.WebApi.Client", "4.0.20505.0"); ("Microsoft.AspNet.WebApi.WebHost", "4.0.20505.0")
-                            ("Microsoft.AspNet.WebPages", "2.0.20505.0"); ("Microsoft.jQuery.Unobtrusive.Ajax", "2.0.20505.0"); ("Microsoft.jQuery.Unobtrusive.Validation", "2.0.20505.0")
-                            ("Microsoft.Net.Http", "2.0.20505.0"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("Modernizr", "2.0.6")
-                            ("Newtonsoft.Json", "4.5.1"); ("WebGrease", "1.0.0") ]
+                        <| [("EntityFramework", "5.0.0"); ("jQuery.UI.Combined", "1.8.11"); ("jQuery", "1.6.4"); ("jQuery.Validation", "1.9.0.1")
+                            ("knockoutjs", "2.1.0"); ("Microsoft.AspNet.Mvc", "4.0.20710.0"); ("Microsoft.AspNet.Providers", "1.2"); ("Microsoft.AspNet.WebApi.Core", "4.0.20710.0"); 
+                            ("Microsoft.AspNet.Providers.Core", "1.1"); ("Microsoft.AspNet.Razor", "2.0.20710.0"); ("Microsoft.AspNet.Web.Optimization", "1.0.0") 
+                            ("Microsoft.AspNet.WebApi", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.Client", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.WebHost", "4.0.20710.0")
+                            ("Microsoft.AspNet.WebPages", "2.0.20710.0"); ("Microsoft.jQuery.Unobtrusive.Ajax", "2.0.20710.0"); ("Microsoft.jQuery.Unobtrusive.Validation", "2.0.20710.0")
+                            ("Microsoft.Net.Http", "2.0.20710.0"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("Modernizr", "2.5.3"); ("Microsoft.AspNet.Providers", "1.2");
+                            ("Newtonsoft.Json", "4.5.6"); ("WebGrease", "1.1.0"); ("Microsoft.AspNet.Providers.LocalDb", "1.1"); ("Microsoft.AspNet.Web.Optimization", "1.0.0");]
 
                         // Need separate NuGet package installs for MVC and WebApi? This might improve perf. 
                     with
@@ -123,7 +123,6 @@ type TemplateWizard() =
                                 "The NuGet installation process failed."
                                 "Ensure that you have installed at least the release candidate of ASP.NET MVC 4." 
                                 "See http://asp.net/mvc/mvc4 for more information."
-                                //("See http://asp.net/mvc/mvc4 for more information." + " debug: NuGet Path = " + NuGetService.GetNuGetPackageLocalPath(this.serviceProvider))
                                 "The actual exception message is: "
                                 ex.Message)
 
