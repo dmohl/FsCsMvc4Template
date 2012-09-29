@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace FsCsMvc4Dialog
 {
@@ -11,13 +12,15 @@ namespace FsCsMvc4Dialog
 
         public bool IncludeTestsProject { get; protected set; }
         public string SelectedViewEngine { get; protected set; }
-        public bool IsWebApi { get; protected set; }
+        protected bool IsOnlyRazor { get; set; }
+        public int SelectedProjectTypeIndex { get; protected set; }
+        public string SelectedJsFramework { get; protected set; }
 
         private void btnOk_Click(object sender, RoutedEventArgs e)
         {
             IncludeTestsProject =
                 cbIncludeTestsProject.IsChecked.HasValue ? cbIncludeTestsProject.IsChecked.Value : false;
-            if (IsWebApi)
+            if (IsOnlyRazor)
             {
                 SelectedViewEngine = "Razor";
                 cbViewEngine.SelectedIndex = 1;
@@ -26,6 +29,8 @@ namespace FsCsMvc4Dialog
             {
                 SelectedViewEngine = cbViewEngine.SelectionBoxItem.ToString();
             }
+            SelectedProjectTypeIndex = lvwProjectType.SelectedIndex;
+            SelectedJsFramework = ((ComboBoxItem)cbJsFramework.SelectedItem).Tag.ToString();
             DialogResult = true;
             Close();
         }
@@ -37,8 +42,15 @@ namespace FsCsMvc4Dialog
 
         private void lvwProjectType_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            IsWebApi = lvwProjectType.SelectedIndex == 1;
-            cbViewEngine.IsEnabled = !IsWebApi;
+            IsOnlyRazor = lvwProjectType.SelectedIndex == 1 || lvwProjectType.SelectedIndex == 2;
+            cbViewEngine.IsEnabled = !IsOnlyRazor;
+            cbJsFramework.Visibility = IsSpa() ? Visibility.Visible : Visibility.Collapsed;
+            lblViewEngine.Visibility = cbJsFramework.Visibility;
         }
+
+        private bool IsSpa()
+        {
+            return lvwProjectType.SelectedIndex == 2;
+        } 
     }
 }

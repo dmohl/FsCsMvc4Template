@@ -22,6 +22,8 @@ type TemplateWizard() =
     [<DefaultValue>] val mutable includeTestProject : bool
     [<DefaultValue>] val mutable vsixInstallPath : string
     [<DefaultValue>] val mutable isWebApi : bool
+    [<DefaultValue>] val mutable isSpa : bool
+    [<DefaultValue>] val mutable selectedJsFramework : string
 
     let mutable selectedWebProjectName = "Razor"
     interface IWizard with
@@ -42,7 +44,11 @@ type TemplateWizard() =
             | true -> 
                 this.includeTestProject <- dialog.IncludeTestsProject
                 selectedWebProjectName <- dialog.SelectedViewEngine
-                this.isWebApi <- dialog.IsWebApi
+                match dialog.SelectedProjectTypeIndex with
+                | 1 -> this.isWebApi <- true
+                | 2 -> 
+                    this.selectedJsFramework <- dialog.SelectedJsFramework
+                    this.isSpa <- true
             | _ ->
                 raise (new WizardCancelledException())
         member this.ProjectFinishedGenerating project = "Not Implemented" |> ignore
@@ -54,13 +60,21 @@ type TemplateWizard() =
             Cursor.Current <- Cursors.WaitCursor
             try
                 let mutable selectedWebAppProjectName = "WebApp"
-                let webName = match this.isWebApi with
-                              | true -> selectedWebProjectName <- "WebApi"
-                                        this.safeProjectName + "WebApi"
+                let webName = match this.isWebApi, this.isSpa with
+                              | true, false -> 
+                                  selectedWebProjectName <- "WebApi"
+                                  this.safeProjectName + "WebApi"
+                              | false, true -> 
+                                  selectedWebProjectName <- "SpaRazor"
+                                  this.safeProjectName + "WebSpa"
                               | _ -> this.safeProjectName + "Web"
-                let webAppName = match this.isWebApi with
-                                 | true -> selectedWebAppProjectName <- "WebAppApi"
-                                           this.safeProjectName + "WebAppApi"
+                let webAppName = match this.isWebApi, this.isSpa with
+                                 | true, false -> 
+                                     selectedWebAppProjectName <- "WebAppApi"
+                                     this.safeProjectName + "WebAppApi"
+                                 | false, true -> 
+                                     selectedWebAppProjectName <- "WebAppSpa"
+                                     this.safeProjectName + "WebAppSpa"
                                  | _ -> this.safeProjectName + "WebApp"
                 let webAppTestsName = this.safeProjectName + "WebAppTests"
 
@@ -84,38 +98,23 @@ type TemplateWizard() =
                     this.dte2.StatusBar.Text <- "Adding NuGet packages..."
                     try
 
-// This is the List from the C# ASP.NET MVC Empty template found at C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ProjectTemplatesCache\CSharp\Web\1033\EmptyMvcWebApplicationProjectTemplatev4.0.cshtml.zip
-//  <package id="EntityFramework" version="5.0.0-rc" />
-//  <package id="jQuery" version="1.6.2" />
-//  <package id="jQuery.UI.Combined" version="1.8.11" />
-//  <package id="jQuery.Validation" version="1.8.1" />
-//  <package id="knockoutjs" version="2.0.0" />
-//  <package id="Microsoft.AspNet.Mvc" version="4.0.20505.0" />
-//  <package id="Microsoft.AspNet.Providers" version="1.1" />
-//  <package id="Microsoft.AspNet.Providers.Core" version="1.0" />
-//  <package id="Microsoft.AspNet.Razor" version="2.0.20505.0" />
-//  <package id="Microsoft.AspNet.Web.Optimization" version="1.0.0-beta2" />
-//  <package id="Microsoft.AspNet.WebApi" version="4.0.20505.0" />
-//  <package id="Microsoft.AspNet.WebApi.Client" version="4.0.20505.0" />
-//  <package id="Microsoft.AspNet.WebApi.Core" version="4.0.20505.0" />
-//  <package id="Microsoft.AspNet.WebApi.WebHost" version="4.0.20505.0" />
-//  <package id="Microsoft.AspNet.WebPages" version="2.0.20505.0" />
-//  <package id="Microsoft.jQuery.Unobtrusive.Ajax" version="2.0.20505.0" />
-//  <package id="Microsoft.jQuery.Unobtrusive.Validation" version="2.0.20505.0" />
-//  <package id="Microsoft.Net.Http" version="2.0.20505.0" />
-//  <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" />
-//  <package id="Modernizr" version="2.0.6" />
-//  <package id="Newtonsoft.Json" version="4.5.1" />
-//  <package id="WebGrease" version="1.0.0" />
+                        let baseNuGetPackages = 
+                            [("EntityFramework", "5.0.0"); ("jQuery.UI.Combined", "1.8.11"); ("jQuery", "1.6.4"); ("jQuery.Validation", "1.9.0.1")
+                             ("knockoutjs", "2.1.0"); ("Microsoft.AspNet.Mvc", "4.0.20710.0"); ("Microsoft.AspNet.Providers", "1.2"); ("Microsoft.AspNet.WebApi.Core", "4.0.20710.0"); 
+                             ("Microsoft.AspNet.Providers.Core", "1.1"); ("Microsoft.AspNet.Razor", "2.0.20710.0"); ("Microsoft.AspNet.Web.Optimization", "1.0.0") 
+                             ("Microsoft.AspNet.WebApi", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.Client", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.WebHost", "4.0.20710.0")
+                             ("Microsoft.AspNet.WebPages", "2.0.20710.0"); ("Microsoft.jQuery.Unobtrusive.Ajax", "2.0.20710.0"); ("Microsoft.jQuery.Unobtrusive.Validation", "2.0.20710.0")
+                             ("Microsoft.Net.Http", "2.0.20710.0"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("Modernizr", "2.5.3"); ("Microsoft.AspNet.Providers", "1.2");
+                             ("Newtonsoft.Json", "4.5.6"); ("WebGrease", "1.1.0"); ("Microsoft.AspNet.Providers.LocalDb", "1.1"); ("Microsoft.AspNet.Web.Optimization", "1.0.0");]
+    
+                        let nugetPackages = 
+                            match this.isSpa, this.selectedJsFramework with
+                            | true, "None" -> baseNuGetPackages
+                            | true, jsFramework -> baseNuGetPackages @ [(jsFramework, "0.1.0.0")]
+                            | _ -> baseNuGetPackages
 
                         (projects.TryFind webName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
-                        <| [("EntityFramework", "5.0.0"); ("jQuery.UI.Combined", "1.8.11"); ("jQuery", "1.6.4"); ("jQuery.Validation", "1.9.0.1")
-                            ("knockoutjs", "2.1.0"); ("Microsoft.AspNet.Mvc", "4.0.20710.0"); ("Microsoft.AspNet.Providers", "1.2"); ("Microsoft.AspNet.WebApi.Core", "4.0.20710.0"); 
-                            ("Microsoft.AspNet.Providers.Core", "1.1"); ("Microsoft.AspNet.Razor", "2.0.20710.0"); ("Microsoft.AspNet.Web.Optimization", "1.0.0") 
-                            ("Microsoft.AspNet.WebApi", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.Client", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.WebHost", "4.0.20710.0")
-                            ("Microsoft.AspNet.WebPages", "2.0.20710.0"); ("Microsoft.jQuery.Unobtrusive.Ajax", "2.0.20710.0"); ("Microsoft.jQuery.Unobtrusive.Validation", "2.0.20710.0")
-                            ("Microsoft.Net.Http", "2.0.20710.0"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("Modernizr", "2.5.3"); ("Microsoft.AspNet.Providers", "1.2");
-                            ("Newtonsoft.Json", "4.5.6"); ("WebGrease", "1.1.0"); ("Microsoft.AspNet.Providers.LocalDb", "1.1"); ("Microsoft.AspNet.Web.Optimization", "1.0.0");]
+                        <| nugetPackages
 
                         // Need separate NuGet package installs for MVC and WebApi? This might improve perf. 
                     with

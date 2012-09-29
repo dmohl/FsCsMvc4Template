@@ -8,23 +8,16 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="884" fromTop="15" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="354" fromTop="3" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/d:Properties/f:AssemblyInfo.cs" caret="2300" fromTop="11" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:ProjectService.fs" caret="0" fromTop="0" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="511" fromTop="5" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7771" fromTop="15" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="1762" fromTop="0" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="1233" fromTop="20" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:ProjectService.fs" caret="0" fromTop="0" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3715" fromTop="15" />
     </RecentFiles>
     <RecentEdits>
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="3237" fromTop="1" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2843" fromTop="2" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2024" fromTop="2" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2260" fromTop="3" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="401" fromTop="16" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="1297" fromTop="5" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="401" fromTop="8" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="855" fromTop="14" />
-      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="711" fromTop="9" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="2662" fromTop="3" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="565" fromTop="16" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="354" fromTop="3" />
       <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/d:Properties/f:AssemblyInfo.cs" caret="2300" fromTop="11" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="1438" fromTop="22" />
@@ -32,9 +25,27 @@
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="35" fromTop="2" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="655" fromTop="2" />
       <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:NuGetService.fs" caret="198" fromTop="6" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7420" fromTop="16" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="6533" fromTop="2" />
-      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="8095" fromTop="7" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7605" fromTop="7" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="7192" fromTop="13" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="3804" fromTop="4" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="4389" fromTop="5" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="4278" fromTop="4" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="2155" fromTop="10" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="778" fromTop="0" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="1939" fromTop="21" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="1845" fromTop="16" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml" caret="1762" fromTop="0" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="519" fromTop="4" />
+      <File id="9EC3CEC7-7B86-405B-BC41-0306588B693C/f:TemplateWizardDialog.xaml.cs" caret="1233" fromTop="20" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="6577" fromTop="12" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="920" fromTop="14" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="5339" fromTop="4" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="6922" fromTop="17" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3669" fromTop="14" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3633" fromTop="15" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3324" fromTop="7" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3138" fromTop="4" />
+      <File id="0A759734-945A-494B-AC8C-F0B9F44A70ED/f:TemplateWizard.fs" caret="3715" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -50,18 +61,44 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Qualified:System.Windows.Controls.ComboBox">
       <Item value="IsEnabled" priority="0" />
+      <Item value="SelectedIndex" priority="0" />
+      <Item value="IsVisible" priority="0" />
+      <Item value="Visibility" priority="0" />
+      <Item value="SelectionBoxItem" priority="0" />
+      <Item value="SelectedValue" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Default">
       <Item value="e" priority="0" />
-      <Item value="lvwProjectType" priority="0" />
+      <Item value="lvwProjectType" priority="1" />
       <Item value="if" priority="0" />
       <Item value="else" priority="0" />
       <Item value="SelectedViewEngine" priority="0" />
-      <Item value="private" priority="0" />
+      <Item value="private" priority="1" />
+      <Item value="public" priority="0" />
+      <Item value="string" priority="0" />
+      <Item value="cbViewEngine" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="IsSpa`0" priority="0" />
+      <Item value="lblViewEngine" priority="0" />
+      <Item value="Visibility" priority="0" />
+      <Item value="VisibilityProperty" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Controls.ListView">
       <Item value="SelectedValue" priority="0" />
-      <Item value="SelectedIndex" priority="0" />
+      <Item value="SelectedIndex" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Label">
+      <Item value="IsVisible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Visibility">
+      <Item value="Visible" priority="0" />
+      <Item value="Collapsed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ComboBoxItem">
+      <Item value="Tag" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
