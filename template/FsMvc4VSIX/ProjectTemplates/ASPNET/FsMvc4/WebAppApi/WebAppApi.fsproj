@@ -78,7 +78,10 @@
       <Private>True</Private>
       <HintPath>..\..\packages\AspNetWebApi.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
-  </ItemGroup>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.fs" />
     <Compile Include="HomeController.fs" />

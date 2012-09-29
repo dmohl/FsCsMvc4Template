@@ -45,7 +45,7 @@ namespace FsCsMvc4Dialog
             IsOnlyRazor = lvwProjectType.SelectedIndex == 1 || lvwProjectType.SelectedIndex == 2;
             cbViewEngine.IsEnabled = !IsOnlyRazor;
             cbJsFramework.Visibility = IsSpa() ? Visibility.Visible : Visibility.Collapsed;
-            lblViewEngine.Visibility = cbJsFramework.Visibility;
+            lblJsFramework.Visibility = cbJsFramework.Visibility;
         }
 
         private bool IsSpa()
