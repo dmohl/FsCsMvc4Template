@@ -49,6 +49,7 @@ type TemplateWizard() =
                 | 2 -> 
                     this.selectedJsFramework <- dialog.SelectedJsFramework
                     this.isSpa <- true
+                | _ -> () 
             | _ ->
                 raise (new WizardCancelledException())
         member this.ProjectFinishedGenerating project = "Not Implemented" |> ignore
