@@ -18,8 +18,9 @@
                 <ComboBoxItem Content="ASPX" />
             </ComboBox>
             <Label Canvas.Left="0" Canvas.Top="6" Content="View Engine:" Height="28" Name="lblViewEngine" />
-            <ComboBox Canvas.Left="128" Canvas.Top="67" Height="23" Name="cbJsFramework" Width="293" IsEnabled="False">
+            <ComboBox Canvas.Left="128" Canvas.Top="67" Height="23" Name="cbJsFramework" Width="293">
                 <ComboBoxItem Content="Backbone.js" Tag="FsSpa-Backbone" IsSelected="True" />
+                <ComboBoxItem Content="Knockout.js" Tag="FsSpa-Knockout" />
             </ComboBox>
             <Label Canvas.Left="0" Canvas.Top="67" Content="JavaScript Framwork:" Height="28" Name="lblJsFramework" />
         </Canvas>
