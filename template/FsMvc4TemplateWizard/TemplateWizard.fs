@@ -101,11 +101,11 @@ type TemplateWizard() =
 
                         let baseNuGetPackages = 
                             [("EntityFramework", "5.0.0"); ("jQuery.UI.Combined", "1.8.11"); ("jQuery", "1.6.4"); ("jQuery.Validation", "1.9.0.1")
-                             ("knockoutjs", "2.1.0"); ("Microsoft.AspNet.Mvc", "4.0.20710.0"); ("Microsoft.AspNet.Providers", "1.2"); ("Microsoft.AspNet.WebApi.Core", "4.0.20710.0"); 
+                             ("knockoutjs", "2.1.0"); ("Microsoft.AspNet.Mvc", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.Core", "4.0.20710.0"); 
                              ("Microsoft.AspNet.Providers.Core", "1.1"); ("Microsoft.AspNet.Razor", "2.0.20710.0"); ("Microsoft.AspNet.Web.Optimization", "1.0.0") 
                              ("Microsoft.AspNet.WebApi", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.Client", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.WebHost", "4.0.20710.0")
                              ("Microsoft.AspNet.WebPages", "2.0.20710.0"); ("Microsoft.jQuery.Unobtrusive.Ajax", "2.0.20710.0"); ("Microsoft.jQuery.Unobtrusive.Validation", "2.0.20710.0")
-                             ("Microsoft.Net.Http", "2.0.20710.0"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("Modernizr", "2.5.3"); ("Microsoft.AspNet.Providers", "1.2");
+                             ("Microsoft.Net.Http", "2.0.20710.0"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("Modernizr", "2.5.3");
                              ("Newtonsoft.Json", "4.5.6"); ("WebGrease", "1.1.0"); ("Microsoft.AspNet.Providers.LocalDb", "1.1"); ("Microsoft.AspNet.Web.Optimization", "1.0.0");]
     
                         let nugetPackages = 
@@ -116,8 +116,6 @@ type TemplateWizard() =
 
                         (projects.TryFind webName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
                         <| nugetPackages
-
-                        // Need separate NuGet package installs for MVC and WebApi? This might improve perf. 
                     with
                     | ex -> failwith (sprintf "%s\n\r%s\n\r%s\n\r%s\n\r%s" 
                                 "The NuGet installation process failed."
