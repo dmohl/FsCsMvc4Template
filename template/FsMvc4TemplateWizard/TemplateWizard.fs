@@ -108,14 +108,33 @@ type TemplateWizard() =
                              ("Microsoft.Net.Http", "2.0.20710.0"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("Modernizr", "2.5.3");
                              ("Newtonsoft.Json", "4.5.6"); ("WebGrease", "1.1.0"); ("Microsoft.AspNet.Providers.LocalDb", "1.1"); ("Microsoft.AspNet.Web.Optimization", "1.0.0");]
     
+                        let appNuGetPackages = 
+                            [("EntityFramework", "5.0.0"); ("Microsoft.AspNet.Mvc", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.Core", "4.0.20710.0"); 
+                             ("Microsoft.AspNet.Providers.Core", "1.1"); ("Microsoft.AspNet.Web.Optimization", "1.0.0") 
+                             ("Microsoft.AspNet.WebApi", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.Client", "4.0.20710.0"); ("Microsoft.AspNet.WebApi.WebHost", "4.0.20710.0")
+                             ("Microsoft.Net.Http", "2.0.20710.0"); ("Microsoft.Web.Infrastructure", "1.0.0.0"); ("Newtonsoft.Json", "4.5.6")]
+
+                        let appTestNuGetPackages = 
+                            [("EntityFramework", "5.0.0"); ("Microsoft.AspNet.Mvc", "4.0.20710.0")]
+
                         let nugetPackages = 
                             match this.isSpa, this.selectedJsFramework with
                             | true, "None" -> baseNuGetPackages
                             | true, jsFramework -> baseNuGetPackages @ [(jsFramework, "0.1.0.0")]
                             | _ -> baseNuGetPackages
 
+                        this.dte2.StatusBar.Text <- "Adding NuGet packages to the web project..."
                         (projects.TryFind webName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
                         <| nugetPackages
+
+                        this.dte2.StatusBar.Text <- "Adding NuGet packages to the web application project..."
+                        (projects.TryFind webAppName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
+                        <| appNuGetPackages         
+                        
+                        if this.includeTestProject then               
+                            this.dte2.StatusBar.Text <- "Adding NuGet packages to the unit test project..."
+                            (projects.TryFind webAppTestsName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
+                            <| appTestNuGetPackages
                     with
                     | ex -> failwith (sprintf "%s\n\r%s\n\r%s\n\r%s\n\r%s" 
                                 "The NuGet installation process failed."

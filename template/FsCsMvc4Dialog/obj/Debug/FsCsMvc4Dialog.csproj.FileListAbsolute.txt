@@ -8,3 +8,14 @@ C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.Propert
 C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.dll
 C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.pdb
 C:\git\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.csproj.GenerateResource.Cache
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\bin\Debug\FsCsMvc4Dialog.dll
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\bin\Debug\FsCsMvc4Dialog.pdb
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.csprojResolveAssemblyReference.cache
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\TemplateWizardDialog.baml
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\TemplateWizardDialog.g.cs
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog_MarkupCompile.cache
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.g.resources
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.Properties.Resources.resources
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.csproj.GenerateResource.Cache
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.dll
+C:\Users\dmohl\Documents\GitHub\FsCsMvc4Template\template\FsCsMvc4Dialog\obj\Debug\FsCsMvc4Dialog.pdb
