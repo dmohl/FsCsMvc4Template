@@ -127,14 +127,16 @@ type TemplateWizard() =
                         (projects.TryFind webName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
                         <| nugetPackages
 
-                        this.dte2.StatusBar.Text <- "Adding NuGet packages to the web application project..."
-                        (projects.TryFind webAppName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
-                        <| appNuGetPackages         
-                        
-                        if this.includeTestProject then               
-                            this.dte2.StatusBar.Text <- "Adding NuGet packages to the unit test project..."
-                            (projects.TryFind webAppTestsName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
-                            <| appTestNuGetPackages
+// Unfortunately, if we install the packages the right way into the 2 F# projects, the references do not get setup correctly. This causes issues when deploying to Azure.
+// Because of this, I've hacked a solution that allows the project to think that NuGet installed the package, but that really was done through the template. 
+//                        this.dte2.StatusBar.Text <- "Adding NuGet packages to the web application project..."
+//                        (projects.TryFind webAppName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
+//                        <| appNuGetPackages                   
+     
+//                        if this.includeTestProject then               
+//                            this.dte2.StatusBar.Text <- "Adding NuGet packages to the unit test project..."
+//                            (projects.TryFind webAppTestsName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", ""))
+//                            <| appTestNuGetPackages
                     with
                     | ex -> failwith (sprintf "%s\n\r%s\n\r%s\n\r%s\n\r%s" 
                                 "The NuGet installation process failed."
