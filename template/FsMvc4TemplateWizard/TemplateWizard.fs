@@ -120,7 +120,13 @@ type TemplateWizard() =
                         let nugetPackages = 
                             match this.isSpa, this.selectedJsFramework with
                             | true, "None" -> baseNuGetPackages
-                            | true, jsFramework -> baseNuGetPackages @ [(jsFramework, "0.1.0.0")]
+                            | true, jsFramework -> 
+                                (projects.TryFind webAppName).Value |> InstallPackages this.serviceProvider (templatePath.Replace("FsMvc4.vstemplate", "")) 
+                                <| [(jsFramework + "-Bundler", "0.1.1.0")]
+                                if jsFramework = "FsSpa-Angular" then
+                                    baseNuGetPackages @ [(jsFramework, "0.1.1.0"); ("angularjs", "1.0.7")]
+                                else 
+                                    baseNuGetPackages @ [(jsFramework, "0.1.1.0")]
                             | _ -> baseNuGetPackages
 
                         this.dte2.StatusBar.Text <- "Adding NuGet packages to the web project..."
